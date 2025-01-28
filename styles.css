@@ -2,24 +2,32 @@ body {
     background-color: white;
     color: black;
   }
+  .container {
+    width: 100%;                  /* Use a percentage-based width for scaling */
+    margin: 0 auto;              /* Center horizontally */
+    text-align: center;          /* Center the text inside */
+    padding: 2rem;               /* Scaled padding (relative to the root font size) */
+    background-color: white;
+  }
   hr {
     border: 0.5px solid black; /* Dashed, black line */
     width: 100%;             /* Line spans 80% of the container's width */
     margin: 4px auto;      /* Centers the line and adds vertical space */
     opacity: 1;           /* Makes the line slightly transparent */
-  }
+}
   header {
     text-align: center;
+    padding: 0.5rem;
   }
 header {
     display: inline-block; /* Prevent element from taking 100% width */
     margin: auto;
   }
   h1 {
-    font-size: 24px;
+    font-size: 2rem;
     color: black;
   }
   p {
-    line-height: 1.5;
+    line-height: 1rem;
     text-align: justify;
   }
