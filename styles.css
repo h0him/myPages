@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+    color: black;
+  }
+  hr {
+    border: 0.5px solid black; /* Dashed, black line */
+    width: 100%;             /* Line spans 80% of the container's width */
+    margin: 4px auto;      /* Centers the line and adds vertical space */
+    opacity: 1;           /* Makes the line slightly transparent */
+  }
+  header {
+    text-align: center;
+  }
+header {
+    display: inline-block; /* Prevent element from taking 100% width */
+    margin: auto;
+  }
+  h1 {
+    font-size: 24px;
+    color: black;
+  }
+  p {
+    line-height: 1.5;
+    text-align: justify;
+  }
