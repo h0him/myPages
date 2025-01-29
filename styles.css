@@ -2,12 +2,67 @@ body {
     background-color: white;
     color: black;
   }
-  .container {
+    .hdr {
+    background-color:navy, 1;
     width: 100%;                  /* Use a percentage-based width for scaling */
-    margin: 0 auto;              /* Center horizontally */
+    margin: 0px;              /* Center horizontally */
     text-align: center;          /* Center the text inside */
-    padding: 2rem;               /* Scaled padding (relative to the root font size) */
-    background-color: white;
+    font-size: 1rem;          /* Scaled padding (relative to the root font size) */
+
+    padding: 1rem;
+    color: white;
+
+    
+  }
+  
+    .AI {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) -10%, rgba(255, 255, 255, 1)),url('s1bg.JPG') no-repeat center/cover ; /* Background image */
+    
+    font-size: 0.8rem;
+    margin: 0 auto;     
+    text-align: right;
+    padding: 1rem;
+    color: black;
+  }
+    .TS {
+    background: url('tsbg.jpg') no-repeat center/cover ; /* Background image */
+    font-size: 0.8rem;
+    margin: 0 auto;     
+    text-align: left;
+    padding: 1rem;
+    color: white;
+  }
+    .WE24 {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) -10%, rgba(0, 0, 255, 0.4)),url('we24bg.JPG') no-repeat center/cover ; /* Background image */
+    font-size: 0.8rem;
+    margin: 0 auto;     
+    text-align: right;
+    padding: 1rem;
+    color: white;
+  }
+    .AP {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5)),url('ap_m260.jpg') no-repeat center/cover ; /* Background image */
+    font-size: 0.8rem;
+    margin: 0 auto;     
+    text-align: left;
+    padding: 2rem;
+    color: black;
+  }
+    .CI {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1)),url('winspear.JPG') no-repeat center/cover ; /* Background image */
+    font-size: 0.8rem;
+    margin: 0 auto;     
+    text-align: left;
+    padding: 2rem;
+    color: white;
+  }
+    .extra{
+
+    font-size: 0.8rem;
+    margin: 0 auto;     
+    text-align: left;
+    padding: 2rem;
+    color: white;
   }
   hr {
     border: 0.5px solid black; /* Dashed, black line */
@@ -15,19 +70,29 @@ body {
     margin: 4px auto;      /* Centers the line and adds vertical space */
     opacity: 1;           /* Makes the line slightly transparent */
 }
+
   header {
     text-align: center;
     padding: 0.5rem;
-  }
-header {
     display: inline-block; /* Prevent element from taking 100% width */
     margin: auto;
   }
+
   h1 {
-    font-size: 2rem;
-    color: black;
+    font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1.0rem;
   }
   p {
-    line-height: 1rem;
-    text-align: justify;
+    line-height: 0.7rem;
   }
+  body {
+    background: url('bg_countryroad.JPG') no-repeat center/cover;
+  }
+  .content {
+    text-indent: 20px; /* Moves only the first line */
+}
