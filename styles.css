@@ -15,6 +15,15 @@ body {
     
   }
   
+    .SM {
+    background: linear-gradient(to right, rgba(146, 146, 146, 0.5) -10%, rgb(131, 129, 129)),url('smbg.JPG') no-repeat center/cover ; /* Background image */
+    
+    font-size: 0.8rem;
+    margin: 0 auto;     
+    text-align: center;
+    padding: 1rem;
+    color: white;
+  }
     .AI {
     background: linear-gradient(to right, rgba(255, 255, 255, 0) -10%, rgba(255, 255, 255, 1)),url('s1bg.JPG') no-repeat center/cover ; /* Background image */
     
