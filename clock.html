@@ -14,16 +14,20 @@
             font-family: 'Avenir Next', sans-serif;
             font-weight: bold;
             background-color: #000000;
-            color: #0062ff;
+            color: #5298ca;
         }
         #clock {
-            font-size: 5rem;
+            font-size: 20vw; /* Responsive font size based on viewport width */
             font-weight: bold;
+            text-align: center;
+            width: 80%; /* 80% of the page width */
+            max-width: 1000px; /* Optional: Limit maximum size */
         }
     </style>
 </head>
 <body>
-    <div id="clock">00:00:00</div>
+    <div id="clock">00:00
+    </div>
 
     <script>
         function updateClock() {
