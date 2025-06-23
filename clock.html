@@ -55,6 +55,13 @@
         }
 
         document.getElementById('clock').addEventListener('click', handleClick);
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        }); 
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        }); 
+
         setInterval(updateClock, 1000);
         updateClock();
     </script>
