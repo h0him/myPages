@@ -11,32 +11,53 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: 'Avenir Next', sans-serif;
+            font-family: 'Avenir Next',-apple-system, BlinkMacSystemFont, "Times New Roman";
             font-weight: bold;
             background-color: #000000;
-            color: #5298ca;
+            color: #EF1E2E;
         }
         #clock {
-            font-size: 25vw; /* Responsive font size based on viewport width */
+            font-size: 25vw;
             font-weight: bold;
             text-align: center;
-            width: 80%; /* 80% of the page width */
-            max-width: 1000px; /* Optional: Limit maximum size */
+            width: 80%;
+            height: 25%;
+            max-width: 1000px;
+            cursor: pointer; /* Changes cursor to indicate clickable */
+            user-select: none; /* Prevents text selection when clicking */
+            transition: color 0.3s ease; /* Smooth color transition */
         }
     </style>
 </head>
 <body>
-    <div id="clock">00:00
-    </div>
+    <div id="clock">00:00</div>
 
     <script>
+        // Color options to cycle through
+        const colorOptions = [
+            '#EF1E2E', // Original red
+            '#28A828',  // Green
+            '#D6891A',  // Amber
+            '#5298CA', // Blue
+            '#C0C0C0'   // White
+        ];
+        
+        let currentColorIndex = 0;
+
         function updateClock() {
             const now = new Date();
             const hours = String(now.getHours()).padStart(2, '0');
             const minutes = String(now.getMinutes()).padStart(2, '0');
-            // const seconds = String(now.getSeconds()).padStart(2, '0');
             document.getElementById('clock').textContent = `${hours}:${minutes}`;
         }
+
+        function changeClockColor() {
+            currentColorIndex = (currentColorIndex + 1) % colorOptions.length;
+            document.getElementById('clock').style.color = colorOptions[currentColorIndex];
+        }
+
+        // Add click event listener to the clock
+        document.getElementById('clock').addEventListener('click', changeClockColor);
 
         // Update the clock every second
         setInterval(updateClock, 1000);
